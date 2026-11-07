@@ -1,0 +1,201 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Patient Dashboard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+
+        <div class="logo-section">
+
+            <img src="images/logo.png"
+                 alt="Hospital Logo"
+                 class="logo">
+
+            <div>
+                <h1>Patient Dashboard</h1>
+                <p>Srinivasa Multispeciality Hospital</p>
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+
+        <a href="patient-dashboard.html" class="active">
+            Dashboard
+        </a>
+
+        <a href="appointment.html">
+            Appointments
+        </a>
+
+        <a href="medical-records.html">
+            Medical Records
+        </a>
+
+        <a href="billing.html">
+            Billing
+        </a>
+
+        <a href="#" onclick="logout()">
+            Logout
+        </a>
+
+    </nav>
+
+    <!-- Dashboard -->
+    <section class="services">
+
+        <h2>
+            Welcome, <span id="patientName">Patient</span>!
+        </h2>
+
+        <!-- Patient Profile -->
+        <div class="service-container">
+
+            <div class="service-card">
+
+                <h3>👤 My Profile</h3>
+
+                <p>
+                    <strong>Patient ID:</strong>
+                    <span id="patientId">Loading...</span>
+                </p>
+
+                <p>
+                    <strong>Name:</strong>
+                    <span id="profileName">Loading...</span>
+                </p>
+
+                <p>
+                    <strong>Email:</strong>
+                    <span id="patientEmail">Loading...</span>
+                </p>
+
+                <p>
+                    <strong>Phone:</strong>
+                    <span id="patientPhone">Loading...</span>
+                </p>
+
+                <p>
+                    <strong>Blood Group:</strong>
+                    <span id="patientBloodGroup">Loading...</span>
+                </p>
+
+                <p>
+                    <strong>Gender:</strong>
+                    <span id="patientGender">Loading...</span>
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- My Appointments -->
+        <div class="service-container">
+
+            <div class="service-card">
+
+                <h3>📅 My Appointments</h3>
+
+                <div id="appointmentMessage">
+                    Loading appointments...
+                </div>
+
+                <div style="overflow-x:auto;">
+
+                    <table id="appointmentTable"
+                           style="width:100%; border-collapse:collapse; display:none;">
+
+                        <thead>
+                            <tr>
+                                <th>Appointment ID</th>
+                                <th>Doctor</th>
+                                <th>Date</th>
+                                <th>Time</th>
+                                <th>Reason</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="appointmentTableBody">
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+                <br>
+
+                <a href="appointment.html"
+                   class="btn secondary-btn">
+                    Book New Appointment
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- Dashboard Services -->
+        <div class="service-container">
+
+            <div class="service-card">
+
+                <h3>🩺 Medical Records</h3>
+
+                <p>
+                    View your medical history and reports.
+                </p>
+
+                <a href="medical-records.html"
+                   class="btn secondary-btn">
+                    View Records
+                </a>
+
+            </div>
+
+            <div class="service-card">
+
+                <h3>💳 Billing</h3>
+
+                <p>
+                    View hospital bills and payments.
+                </p>
+
+                <a href="billing.html"
+                   class="btn secondary-btn">
+                    View Bills
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <p>
+            © 2026 Srinivasa Multispeciality Hospital
+        </p>
+
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

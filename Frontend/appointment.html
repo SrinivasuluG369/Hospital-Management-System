@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Appointments</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="logo-section">
+
+        <img src="images/logo.png"
+             alt="Hospital Logo"
+             class="logo">
+
+        <div>
+            <h1>Hospital Appointments</h1>
+            <p>Srinivasa Multispeciality Hospital</p>
+        </div>
+
+    </div>
+
+</header>
+
+<nav class="navbar">
+
+    <a href="index.html">Home</a>
+
+    <a href="patient-dashboard.html">
+        Patient Dashboard
+    </a>
+
+    <a href="doctor-dashboard.html">
+        Doctor Dashboard
+    </a>
+
+    <a href="admin-dashboard.html">
+        Admin Dashboard
+    </a>
+
+</nav>
+
+<div class="container form-container">
+
+    <form id="appointmentForm">
+
+        <h2>Book Appointment</h2>
+
+        <label for="patient">
+            Patient Name:
+        </label>
+
+        <input type="text"
+               id="patient"
+               name="patient"
+               placeholder="Loading patient details..."
+               required
+               readonly>
+
+
+        <label for="doctor">
+            Doctor:
+        </label>
+
+        <select id="doctor"
+                name="doctor"
+                required>
+
+            <option value="">
+                Select Doctor
+            </option>
+
+            <option value="Dr. Rajesh - Cardiologist">
+                Dr. Rajesh - Cardiologist
+            </option>
+
+            <option value="Dr. Priya - General Physician">
+                Dr. Priya - General Physician
+            </option>
+
+            <option value="Dr. Kumar - Orthopedic">
+                Dr. Kumar - Orthopedic
+            </option>
+
+            <option value="Dr. Anitha - Pediatrician">
+                Dr. Anitha - Pediatrician
+            </option>
+
+        </select>
+
+
+        <label for="appointmentDate">
+            Appointment Date:
+        </label>
+
+        <input type="date"
+               id="appointmentDate"
+               name="appointmentDate"
+               required>
+
+
+        <label for="appointmentTime">
+            Appointment Time:
+        </label>
+
+        <input type="time"
+               id="appointmentTime"
+               name="appointmentTime"
+               required>
+
+
+        <label for="reason">
+            Reason:
+        </label>
+
+        <textarea id="reason"
+                  name="reason"
+                  rows="4"
+                  placeholder="Enter reason for appointment"></textarea>
+
+
+        <div class="btn-group">
+
+            <button type="submit">
+                Book Appointment
+            </button>
+
+            <button type="reset">
+                Reset
+            </button>
+
+        </div>
+
+    </form>
+
+</div>
+
+<footer class="footer">
+
+    <p>
+        © 2026 Srinivasa Multispeciality Hospital
+    </p>
+
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

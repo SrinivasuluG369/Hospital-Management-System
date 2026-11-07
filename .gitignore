@@ -1,0 +1,21 @@
+# Java build files
+**/target/
+
+# IDE files
+**/.settings/
+**/.classpath
+**/.project
+.idea/
+.vscode/
+
+# Logs
+*.log
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# OS files
+.DS_Store
+Thumbs.db

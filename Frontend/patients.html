@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Management</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="logo-section">
+        <img src="images/logo.png" alt="Hospital Logo" class="logo">
+        <div>
+            <h1>Patient Management</h1>
+            <p>Srinivasa Multispeciality Hospital</p>
+        </div>
+    </div>
+</header>
+
+<nav class="navbar">
+    <a href="admin-dashboard.html">Admin Dashboard</a>
+    <a href="patients.html" class="active">Patients</a>
+    <a href="doctor-dashboard.html">Doctor Dashboard</a>
+</nav>
+
+<section class="services">
+    <div class="container">
+        <h2>Registered Patients</h2>
+
+        <input
+            type="text"
+            id="patientSearch"
+            placeholder="Search by patient name, phone or username..."
+        >
+
+        <p id="patientListMessage"></p>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Patient ID</th>
+                        <th>Name</th>
+                        <th>Gender</th>
+                        <th>Age</th>
+                        <th>Phone</th>
+                        <th>Blood Group</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody id="patientsTableBody">
+                    <!-- Patient records load from database -->
+                </tbody>
+            </table>
+        </div>
+
+        <section id="patientDetails" style="display: none;">
+            <h2>Patient Details</h2>
+
+            <p><strong>Patient ID:</strong> <span id="detailId"></span></p>
+            <p><strong>Name:</strong> <span id="detailName"></span></p>
+            <p><strong>Date of Birth:</strong> <span id="detailDob"></span></p>
+            <p><strong>Gender:</strong> <span id="detailGender"></span></p>
+            <p><strong>Blood Group:</strong> <span id="detailBloodGroup"></span></p>
+            <p><strong>Phone:</strong> <span id="detailPhone"></span></p>
+            <p><strong>Email:</strong> <span id="detailEmail"></span></p>
+            <p><strong>Address:</strong> <span id="detailAddress"></span></p>
+            <p><strong>Emergency Contact:</strong> <span id="detailEmergency"></span></p>
+            <p><strong>Username:</strong> <span id="detailUsername"></span></p>
+
+            <button type="button" id="closePatientDetails">Close</button>
+        </section>
+    </div>
+</section>
+
+<footer class="footer">
+    <p>© 2026 Srinivasa Multispeciality Hospital</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

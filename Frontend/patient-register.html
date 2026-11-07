@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Patient Registration</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="logo-section">
+
+        <img src="images/logo.png"
+             alt="Hospital Logo"
+             class="logo">
+
+        <div>
+
+            <h1>Srinivasa Multispeciality Hospital</h1>
+
+            <p>Patient Registration</p>
+
+        </div>
+
+    </div>
+
+</header>
+
+<nav class="navbar">
+
+    <a href="index.html">Home</a>
+
+    <a href="patient-register.html"
+       class="active">
+        Patient Registration
+    </a>
+
+    <a href="doctor-register.html">
+        Doctor Registration
+    </a>
+
+    <a href="admin-register.html">
+        Admin Registration
+    </a>
+
+    <a href="login.html">
+        Login
+    </a>
+
+</nav>
+
+<div class="container form-container">
+
+<form action="patient-dashboard.html"
+      method="post">
+
+    <h2>Patient Registration</h2>
+
+    <label for="patientName">
+        Full Name:
+    </label>
+
+    <input type="text"
+           id="patientName"
+           name="patientName"
+           placeholder="Enter full name"
+           required>
+
+
+    <label for="dob">
+        Date of Birth:
+    </label>
+
+    <input type="date"
+           id="dob"
+           name="dob"
+           required>
+
+
+    <label for="gender">
+        Gender:
+    </label>
+
+    <select id="gender"
+            name="gender"
+            required>
+
+        <option value="">
+            Select Gender
+        </option>
+
+        <option value="male">
+            Male
+        </option>
+
+        <option value="female">
+            Female
+        </option>
+
+        <option value="other">
+            Other
+        </option>
+
+    </select>
+
+
+    <label for="bloodGroup">
+        Blood Group:
+    </label>
+
+    <select id="bloodGroup"
+            name="bloodGroup">
+
+        <option value="">
+            Select Blood Group
+        </option>
+
+        <option>A+</option>
+        <option>A-</option>
+        <option>B+</option>
+        <option>B-</option>
+        <option>AB+</option>
+        <option>AB-</option>
+        <option>O+</option>
+        <option>O-</option>
+
+    </select>
+
+
+    <label for="phone">
+        Phone Number:
+    </label>
+
+    <input type="tel"
+           id="phone"
+           name="phone"
+           placeholder="Enter phone number"
+           required>
+
+
+    <label for="email">
+        Email:
+    </label>
+
+    <input type="email"
+           id="email"
+           name="email"
+           placeholder="Enter email">
+
+
+    <label for="address">
+        Address:
+    </label>
+
+    <textarea id="address"
+              name="address"
+              rows="4"
+              placeholder="Enter address"></textarea>
+
+
+    <label for="emergency">
+        Emergency Contact:
+    </label>
+
+    <input type="tel"
+           id="emergency"
+           name="emergency"
+           placeholder="Emergency contact number">
+
+
+    <label for="username">
+        Username:
+    </label>
+
+    <input type="text"
+           id="username"
+           name="username"
+           placeholder="Create username"
+           required>
+
+
+    <label for="password">
+        Password:
+    </label>
+
+    <input type="password"
+           id="password"
+           name="password"
+           placeholder="Create password"
+           required>
+
+
+    <label for="confirmPassword">
+        Confirm Password:
+    </label>
+
+    <input type="password"
+           id="confirmPassword"
+           name="confirmPassword"
+           placeholder="Confirm password"
+           required>
+
+
+    <div class="btn-group">
+
+        <button type="submit">
+            Register
+        </button>
+
+        <button type="reset">
+            Reset
+        </button>
+
+    </div>
+
+</form>
+
+</div>
+
+<footer class="footer">
+
+    <p>
+        © 2026 Srinivasa Multispeciality Hospital
+    </p>
+
+</footer>
+<script src="js/script.js"></script>
+</body>
+
+</html>

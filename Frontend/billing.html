@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Billing</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="logo-section">
+        <img src="images/logo.png" alt="Hospital Logo" class="logo">
+        <div>
+            <h1>Hospital Billing</h1>
+            <p>Srinivasa Multispeciality Hospital</p>
+        </div>
+    </div>
+</header>
+
+<nav class="navbar">
+    <a href="patient-dashboard.html">Patient Dashboard</a>
+    <a href="doctor-dashboard.html">Doctor Dashboard</a>
+    <a href="admin-dashboard.html">Admin Dashboard</a>
+    <a href="billing.html" class="active">Billing</a>
+    <a href="#" id="billingLogout">Logout</a>
+</nav>
+
+<div class="container">
+
+    <!-- Generate Bill Form: Admin only -->
+    <section class="form-container" id="generateBillSection">
+
+        <h2>Generate Bill</h2>
+
+        <form id="generateBillForm">
+
+            <label for="billPatientId">Patient ID:</label>
+            <input type="number" id="billPatientId"
+                   min="1" placeholder="Enter Patient ID" required>
+
+            <label for="billType">Bill Type:</label>
+            <select id="billType" required>
+                <option value="">Select Bill Type</option>
+                <option value="Consultation">Consultation</option>
+                <option value="Laboratory">Laboratory</option>
+                <option value="Pharmacy">Pharmacy</option>
+                <option value="Surgery">Surgery</option>
+                <option value="Hospitalization">Hospitalization</option>
+            </select>
+
+            <label for="amount">Amount (₹):</label>
+            <input type="number" id="amount" min="1"
+                   step="0.01" placeholder="Enter Amount" required>
+
+            <label for="payment">Payment Method:</label>
+            <select id="payment" required>
+                <option value="">Select Payment Method</option>
+                <option value="Cash">Cash</option>
+                <option value="Card">Card</option>
+                <option value="UPI">UPI</option>
+                <option value="Insurance">Insurance</option>
+            </select>
+
+            <div class="btn-group">
+                <button type="submit" id="generateBillButton">
+                    Generate Bill
+                </button>
+                <button type="reset">Reset</button>
+            </div>
+
+            <p id="billMessage"></p>
+
+        </form>
+
+    </section>
+
+    <!-- Bills Table -->
+    <section class="form-container">
+
+        <h2 id="billsHeading">Bills</h2>
+
+        <p id="billsMessage">Loading bills...</p>
+
+        <div style="overflow-x:auto;">
+
+            <table id="billsTable">
+                <thead>
+                    <tr>
+                        <th>Bill ID</th>
+                        <th>Patient ID</th>
+                        <th>Patient Name</th>
+                        <th>Bill Type</th>
+                        <th>Amount</th>
+                        <th>Payment Method</th>
+                        <th>Status</th>
+                        <th>Bill Date</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody id="billsTableBody"></tbody>
+            </table>
+
+        </div>
+
+    </section>
+
+</div>
+
+<footer class="footer">
+    <p>© 2026 Srinivasa Multispeciality Hospital</p>
+</footer>
+
+<script src="js/script.js"></script>
+<script src="js/billing.js"></script>
+
+</body>
+</html>

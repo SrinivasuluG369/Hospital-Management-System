@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Appointments | Srinivasa Multispeciality Hospital</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="logo-section">
+        <img src="images/logo.png" alt="Hospital Logo" class="logo">
+        <div>
+            <h1>Manage Appointments</h1>
+            <p>Srinivasa Multispeciality Hospital</p>
+        </div>
+    </div>
+</header>
+
+<nav class="navbar">
+    <a href="admin-dashboard.html">Dashboard</a>
+    <a href="patients.html">Patients</a>
+    <a href="doctors.html">Doctors</a>
+    <a href="admin-appointments.html" class="active">Appointments</a>
+    <a href="billing.html">Billing</a>
+    <a href="#" id="adminLogout">Logout</a>
+</nav>
+
+<section class="services">
+
+    <h2>All Patient Appointments</h2>
+
+    <p id="adminAppointmentMessage">
+        Loading appointments...
+    </p>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Patient Name</th>
+                    <th>Doctor</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Reason</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody id="adminAppointmentsTableBody">
+                <tr>
+                    <td colspan="8">Loading appointments...</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <br>
+
+    <a href="admin-dashboard.html" class="btn secondary-btn">
+        Back to Dashboard
+    </a>
+
+</section>
+
+<footer class="footer">
+    <p>© 2026 Srinivasa Multispeciality Hospital</p>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

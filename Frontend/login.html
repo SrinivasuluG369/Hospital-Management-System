@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login - Hospital Management System</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="logo-section">
+
+        <img src="images/logo.png"
+             alt="Hospital Logo"
+             class="logo">
+
+        <div>
+            <h1>Srinivasa Multispeciality Hospital</h1>
+            <p>Hospital Management System</p>
+        </div>
+
+    </div>
+
+</header>
+
+
+<nav class="navbar">
+
+    <a href="index.html">Home</a>
+
+    <a href="patient-register.html">
+        Patient Registration
+    </a>
+
+    <a href="doctor-register.html">
+        Doctor Registration
+    </a>
+
+    <a href="admin-register.html">
+        Admin Registration
+    </a>
+
+    <a href="login.html" class="active">
+        Login
+    </a>
+
+</nav>
+
+
+<div class="container form-container">
+
+    <!-- ONLY ONE FORM -->
+    <form id="loginForm">
+
+        <h2>Login</h2>
+
+        <label for="role">
+            Login As:
+        </label>
+
+        <select id="role" name="role" required>
+
+            <option value="">
+                Select Role
+            </option>
+
+            <option value="patient">
+                Patient
+            </option>
+
+            <option value="doctor">
+                Doctor
+            </option>
+
+            <option value="admin">
+                Admin
+            </option>
+
+        </select>
+
+
+        <label for="username">
+            Username:
+        </label>
+
+        <input type="text"
+               id="username"
+               name="username"
+               placeholder="Enter username"
+               required>
+
+
+        <label for="password">
+            Password:
+        </label>
+
+        <input type="password"
+               id="password"
+               name="password"
+               placeholder="Enter password"
+               required>
+
+
+        <div class="btn-group">
+
+            <button type="submit">
+                Login
+            </button>
+
+            <button type="reset">
+                Reset
+            </button>
+
+        </div>
+
+
+        <p>
+            New Patient?
+
+            <a href="patient-register.html">
+                Register Here
+            </a>
+        </p>
+
+    </form>
+
+</div>
+
+
+<footer class="footer">
+
+    <p>
+        © 2026 Srinivasa Multispeciality Hospital
+    </p>
+
+</footer>
+
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>

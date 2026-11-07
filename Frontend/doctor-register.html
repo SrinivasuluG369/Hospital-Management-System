@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Doctor Registration</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="logo-section">
+
+        <img src="images/logo.png"
+             alt="Hospital Logo"
+             class="logo">
+
+        <div>
+
+            <h1>Srinivasa Multispeciality Hospital</h1>
+
+            <p>Doctor Registration</p>
+
+        </div>
+
+    </div>
+
+</header>
+
+<nav class="navbar">
+
+    <a href="index.html">Home</a>
+
+    <a href="patient-register.html">
+        Patient Registration
+    </a>
+
+    <a href="doctor-register.html"
+       class="active">
+        Doctor Registration
+    </a>
+
+    <a href="admin-register.html">
+        Admin Registration
+    </a>
+
+    <a href="login.html">
+        Login
+    </a>
+
+</nav>
+
+<div class="container form-container">
+
+<form action="doctor-dashboard.html"
+      method="post">
+
+    <h2>Doctor Registration</h2>
+
+
+    <label for="doctorName">
+        Full Name:
+    </label>
+
+    <input type="text"
+           id="doctorName"
+           name="doctorName"
+           placeholder="Enter doctor name"
+           required>
+
+
+    <label for="specialization">
+        Specialization:
+    </label>
+
+    <select id="specialization"
+            name="specialization"
+            required>
+
+        <option value="">
+            Select Specialization
+        </option>
+
+        <option>General Physician</option>
+        <option>Cardiologist</option>
+        <option>Neurologist</option>
+        <option>Dermatologist</option>
+        <option>Orthopedic</option>
+        <option>Pediatrician</option>
+        <option>Gynecologist</option>
+        <option>ENT Specialist</option>
+
+    </select>
+
+
+    <label for="qualification">
+        Qualification:
+    </label>
+
+    <input type="text"
+           id="qualification"
+           name="qualification"
+           placeholder="MBBS, MD, etc."
+           required>
+
+
+    <label for="experience">
+        Experience:
+    </label>
+
+    <input type="number"
+           id="experience"
+           name="experience"
+           min="0"
+           placeholder="Years of experience">
+
+
+    <label for="doctorPhone">
+        Phone:
+    </label>
+
+    <input type="tel"
+           id="doctorPhone"
+           name="doctorPhone"
+           placeholder="Enter phone number"
+           required>
+
+
+    <label for="doctorEmail">
+        Email:
+    </label>
+
+    <input type="email"
+           id="doctorEmail"
+           name="doctorEmail"
+           placeholder="Enter email"
+           required>
+
+
+    <label for="department">
+        Department:
+    </label>
+
+    <input type="text"
+           id="department"
+           name="department"
+           placeholder="Enter department">
+
+
+    <label for="doctorUsername">
+        Username:
+    </label>
+
+    <input type="text"
+           id="doctorUsername"
+           name="doctorUsername"
+           placeholder="Create username"
+           required>
+
+
+    <label for="doctorPassword">
+        Password:
+    </label>
+
+    <input type="password"
+           id="doctorPassword"
+           name="doctorPassword"
+           placeholder="Create password"
+           required>
+
+
+    <div class="btn-group">
+
+        <button type="submit">
+            Register
+        </button>
+
+        <button type="reset">
+            Reset
+        </button>
+
+    </div>
+
+</form>
+
+</div>
+
+<footer class="footer">
+
+    <p>
+        © 2026 Srinivasa Multispeciality Hospital
+    </p>
+
+</footer>
+<script src="js/script.js"></script>
+</body>
+
+</html>

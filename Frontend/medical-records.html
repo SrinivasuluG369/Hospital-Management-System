@@ -1,0 +1,209 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Medical Records | Srinivasa Multispeciality Hospital</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo-section">
+
+            <img src="images/logo.png"
+                 alt="Hospital Logo"
+                 class="logo">
+
+            <div>
+                <h1>Medical Records</h1>
+                <p>Srinivasa Multispeciality Hospital</p>
+            </div>
+
+        </div>
+    </header>
+
+
+    <nav class="navbar">
+
+        <a href="patient-dashboard.html">
+            Patient Dashboard
+        </a>
+
+        <a href="doctor-dashboard.html">
+            Doctor Dashboard
+        </a>
+
+        <a href="admin-dashboard.html">
+            Admin Dashboard
+        </a>
+
+        <a href="medical-records.html" class="active">
+            Medical Records
+        </a>
+
+        <a href="#" id="adminLogout">
+            Logout
+        </a>
+
+    </nav>
+
+
+    <!-- DOCTOR ADD MEDICAL RECORD -->
+
+    <section class="services">
+
+        <h2>Add Patient Medical Record</h2>
+
+        <div class="container">
+
+            <form id="medicalRecordForm">
+
+                <div class="form-group">
+
+                    <label for="recordPatientId">
+                        Patient ID
+                    </label>
+
+                    <input
+                        type="number"
+                        id="recordPatientId"
+                        placeholder="Enter Patient ID"
+                        min="1"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="recordDoctorName">
+                        Doctor Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="recordDoctorName"
+                        placeholder="Enter Doctor Name"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="recordDiagnosis">
+                        Diagnosis
+                    </label>
+
+                    <textarea
+                        id="recordDiagnosis"
+                        placeholder="Enter patient diagnosis"
+                        rows="3"
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="recordTreatment">
+                        Treatment
+                    </label>
+
+                    <textarea
+                        id="recordTreatment"
+                        placeholder="Enter treatment details"
+                        rows="3"
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <button type="submit" class="btn">
+                    Add Medical Record
+                </button>
+
+                <p id="medicalRecordMessage"></p>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- MEDICAL RECORDS TABLE -->
+
+    <section class="services">
+
+        <h2>Patient Medical Records</h2>
+
+        <div class="container">
+
+            <p id="medicalRecordsListMessage">
+                Loading medical records...
+            </p>
+
+            <div style="overflow-x:auto;">
+
+                <table id="medicalRecordsTable">
+
+                    <thead>
+
+                        <tr>
+                            <th>Record ID</th>
+                            <th>Patient ID</th>
+                            <th>Patient Name</th>
+                            <th>Doctor</th>
+                            <th>Diagnosis</th>
+                            <th>Treatment</th>
+                            <th>Date</th>
+                            <th>Action</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody id="medicalRecordsTableBody">
+
+                        <tr>
+                            <td colspan="8">
+                                Loading records...
+                            </td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer class="footer">
+
+        <p>
+            © 2026 Srinivasa Multispeciality Hospital
+        </p>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+    <script src="js/medical-records.js"></script>
+
+</body>
+
+</html>

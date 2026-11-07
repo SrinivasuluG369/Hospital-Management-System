@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Management</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="logo-section">
+        <img src="images/logo.png" alt="Hospital Logo" class="logo">
+        <div>
+            <h1>Doctor Management</h1>
+            <p>Srinivasa Multispeciality Hospital</p>
+        </div>
+    </div>
+</header>
+
+<nav class="navbar">
+    <a href="admin-dashboard.html">Admin Dashboard</a>
+    <a href="doctors.html" class="active">Doctors</a>
+    <a href="patients.html">Patients</a>
+</nav>
+
+<section class="services">
+    <div class="container">
+
+        <h2>Hospital Doctors</h2>
+
+        <input
+            type="text"
+            id="doctorSearch"
+            placeholder="Search by doctor name, specialization or phone..."
+        >
+
+        <p id="doctorListMessage"></p>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Doctor ID</th>
+                        <th>Name</th>
+                        <th>Specialization</th>
+                        <th>Qualification</th>
+                        <th>Experience</th>
+                        <th>Phone</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody id="doctorsTableBody">
+                    <!-- Doctors will load from database -->
+                </tbody>
+            </table>
+        </div>
+
+        <section id="doctorDetails" style="display: none;">
+            <h2>Doctor Details</h2>
+
+            <p><strong>Doctor ID:</strong> <span id="detailDoctorId"></span></p>
+            <p><strong>Name:</strong> <span id="detailDoctorName"></span></p>
+            <p><strong>Specialization:</strong> <span id="detailSpecialization"></span></p>
+            <p><strong>Qualification:</strong> <span id="detailQualification"></span></p>
+            <p><strong>Experience:</strong> <span id="detailExperience"></span></p>
+            <p><strong>Department:</strong> <span id="detailDepartment"></span></p>
+            <p><strong>Phone:</strong> <span id="detailDoctorPhone"></span></p>
+            <p><strong>Email:</strong> <span id="detailDoctorEmail"></span></p>
+            <p><strong>Username:</strong> <span id="detailDoctorUsername"></span></p>
+
+            <button type="button" id="closeDoctorDetails">Close</button>
+        </section>
+
+    </div>
+</section>
+
+<footer class="footer">
+    <p>© 2026 Srinivasa Multispeciality Hospital</p>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

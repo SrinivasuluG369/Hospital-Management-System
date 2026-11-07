@@ -1,0 +1,767 @@
+/* =========================================================
+   HOSPITAL MANAGEMENT SYSTEM
+   Main CSS
+   ========================================================= */
+
+
+/* =========================
+   GLOBAL RESET
+   ========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f8fb;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   HEADER
+   ========================= */
+
+.header {
+    background: linear-gradient(135deg, #087f9c, #064c63);
+    color: white;
+    padding: 20px 50px;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.logo {
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+    border-radius: 50%;
+    background-color: white;
+    padding: 5px;
+}
+
+.logo-section h1 {
+    font-size: 28px;
+    margin-bottom: 4px;
+}
+
+.logo-section p {
+    font-size: 15px;
+    opacity: 0.9;
+}
+
+
+/* =========================
+   NAVIGATION BAR
+   ========================= */
+
+.navbar {
+    background-color: #043f52;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+
+    padding: 15px 18px;
+
+    font-size: 15px;
+
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #087f9c;
+}
+
+.navbar a.active {
+    background-color: #087f9c;
+}
+
+
+/* =========================
+   HERO SECTION
+   ========================= */
+
+.hero {
+    min-height: 500px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 50px 20px;
+
+    background:
+        linear-gradient(
+            rgba(0, 76, 99, 0.82),
+            rgba(0, 76, 99, 0.82)
+        );
+
+    color: white;
+}
+
+.hero-content {
+    max-width: 850px;
+}
+
+.hero h2 {
+    font-size: 44px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   BUTTONS
+   ========================= */
+
+.btn {
+    display: inline-block;
+
+    padding: 12px 25px;
+
+    margin: 5px;
+
+    border-radius: 6px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    border: none;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.primary-btn {
+    background-color: white;
+    color: #087f9c;
+}
+
+.secondary-btn {
+    background-color: #064c63;
+    color: white;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+
+/* =========================
+   SERVICES
+   ========================= */
+
+.services {
+    padding: 55px 30px;
+
+    text-align: center;
+}
+
+.services h2 {
+    color: #064c63;
+
+    font-size: 32px;
+
+    margin-bottom: 35px;
+}
+
+.service-container {
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: stretch;
+
+    flex-wrap: wrap;
+
+    gap: 25px;
+}
+
+.service-card {
+    background-color: white;
+
+    width: 260px;
+
+    padding: 30px 22px;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.10);
+
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.service-card h3 {
+    color: #087f9c;
+
+    margin-bottom: 15px;
+
+    font-size: 20px;
+}
+
+.service-card p {
+    color: #555;
+
+    line-height: 1.7;
+}
+
+
+/* =========================
+   GENERAL CONTAINER
+   ========================= */
+
+.container {
+    width: 90%;
+
+    max-width: 1100px;
+
+    margin: 40px auto;
+}
+
+
+/* =========================
+   FORM CONTAINER
+   ========================= */
+
+.form-container {
+    max-width: 650px;
+
+    background-color: white;
+
+    padding: 35px;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 4px 18px rgba(0, 0, 0, 0.12);
+}
+
+.form-container h2 {
+    text-align: center;
+
+    color: #064c63;
+
+    margin-bottom: 30px;
+
+    font-size: 28px;
+}
+
+
+/* =========================
+   FORM ELEMENTS
+   ========================= */
+
+form label {
+    display: block;
+
+    margin-top: 15px;
+
+    margin-bottom: 6px;
+
+    font-weight: bold;
+
+    color: #333;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 5px;
+
+    font-size: 15px;
+
+    font-family: inherit;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+    border-color: #087f9c;
+
+    box-shadow:
+        0 0 5px rgba(8, 127, 156, 0.25);
+}
+
+form textarea {
+    resize: vertical;
+}
+
+
+/* =========================
+   BUTTON GROUP
+   ========================= */
+
+.btn-group {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    margin-top: 25px;
+}
+
+.btn-group button,
+form > button,
+form button[type="submit"] {
+    background-color: #087f9c;
+
+    color: white;
+
+    border: none;
+
+    padding: 12px 25px;
+
+    border-radius: 5px;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.btn-group button:hover,
+form > button:hover,
+form button[type="submit"]:hover {
+    background-color: #064c63;
+}
+
+
+/* =========================
+   FORM LINK
+   ========================= */
+
+.form-container p {
+    text-align: center;
+
+    margin-top: 20px;
+}
+
+.form-container p a {
+    color: #087f9c;
+
+    font-weight: bold;
+
+    text-decoration: none;
+}
+
+.form-container p a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   ABOUT SECTION
+   ========================= */
+
+.about-section {
+    background-color: white;
+
+    text-align: center;
+
+    padding: 60px 20%;
+
+    margin-top: 30px;
+}
+
+.about-section h2 {
+    color: #064c63;
+
+    margin-bottom: 20px;
+
+    font-size: 32px;
+}
+
+.about-section p {
+    color: #555;
+
+    line-height: 1.8;
+
+    font-size: 16px;
+}
+
+
+/* =========================
+   TABLE
+   ========================= */
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    background-color: white;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.10);
+
+    border-radius: 8px;
+
+    overflow: hidden;
+}
+
+table thead {
+    background-color: #064c63;
+
+    color: white;
+}
+
+table th,
+table td {
+    padding: 14px;
+
+    text-align: center;
+
+    border-bottom: 1px solid #ddd;
+}
+
+table tbody tr:hover {
+    background-color: #f1f8fb;
+}
+
+table button {
+    background-color: #087f9c;
+
+    color: white;
+
+    border: none;
+
+    padding: 8px 15px;
+
+    border-radius: 4px;
+
+    cursor: pointer;
+}
+
+table button:hover {
+    background-color: #064c63;
+}
+
+
+/* =========================
+   DASHBOARD
+   ========================= */
+
+.dashboard {
+    padding: 50px 30px;
+
+    text-align: center;
+}
+
+.dashboard h2 {
+    color: #064c63;
+
+    margin-bottom: 30px;
+}
+
+.dashboard-container {
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 25px;
+}
+
+.dashboard-card {
+    width: 250px;
+
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.10);
+}
+
+.dashboard-card h3 {
+    color: #087f9c;
+
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   FOOTER
+   ========================= */
+
+.footer {
+    background-color: #043f52;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 22px;
+
+    margin-top: 40px;
+}
+
+.footer p {
+    font-size: 14px;
+}
+
+
+/* =========================
+   HOME PAGE EXTRA
+   ========================= */
+
+.hero-buttons {
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+}
+
+
+/* =========================
+   CONTACT
+   ========================= */
+
+.contact-container {
+    max-width: 1100px;
+
+    margin: 40px auto;
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 25px;
+}
+
+.contact-card {
+    background-color: white;
+
+    width: 300px;
+
+    padding: 30px;
+
+    text-align: center;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.10);
+}
+
+.contact-card h3 {
+    color: #087f9c;
+
+    margin-bottom: 12px;
+}
+
+
+/* =========================
+   STATUS
+   ========================= */
+
+.status-success {
+    color: green;
+
+    font-weight: bold;
+
+    text-align: center;
+
+    margin-top: 15px;
+}
+
+.status-error {
+    color: red;
+
+    font-weight: bold;
+
+    text-align: center;
+
+    margin-top: 15px;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+   ========================= */
+
+@media (max-width: 900px) {
+
+    .header {
+        padding: 20px;
+    }
+
+    .logo-section {
+        justify-content: center;
+
+        text-align: center;
+    }
+
+    .logo-section h1 {
+        font-size: 23px;
+    }
+
+    .hero h2 {
+        font-size: 34px;
+    }
+
+    .about-section {
+        padding: 50px 10%;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .logo-section {
+        flex-direction: column;
+    }
+
+    .navbar {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+    .navbar a {
+        text-align: center;
+
+        border-bottom: 1px solid
+        rgba(255, 255, 255, 0.1);
+    }
+
+    .hero {
+        min-height: 400px;
+
+        padding: 30px 15px;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+
+    .service-card {
+        width: 100%;
+
+        max-width: 350px;
+    }
+
+    .form-container {
+        width: 94%;
+
+        padding: 25px 18px;
+    }
+
+    .about-section {
+        padding: 40px 20px;
+    }
+
+    .btn-group {
+        flex-direction: column;
+    }
+
+    .btn-group button {
+        width: 100%;
+    }
+
+    table {
+        display: block;
+
+        overflow-x: auto;
+
+        white-space: nowrap;
+    }
+
+}
+
+
+/* =========================
+   PRINT
+   ========================= */
+
+@media print {
+
+    .navbar,
+    .footer,
+    .btn,
+    button {
+        display: none;
+    }
+
+    body {
+        background-color: white;
+    }
+
+}
